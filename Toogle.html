@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="toogle.css">
+    
+</head>
+<body>
+<!--toogle -->
+<div class="toogle" id="toogle">
+   <nav>
+ <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </nav>
+ <!--text-container-->
+ <div class="text-container">
+    <h1>Latest<br> Toggle tech</h1>
+    <p>This is the first toggle button from our company we are making a huge difference in the toggling world today you can make use of this toggle in different ways.</p>
+<!--link-->
+    <a href="">Check Us Out</a>
+<!--control--> 
+    <div class="control">
+        <p>04</p>
+        <div class="line"><span></span></div>
+        <p>05</p>
+    </div>
+</div>
+</div>
+
+ <!--Darkmode/lightmode-->
+<script>
+   var btn = document.getElementById("btn");
+   var toogle = document.getElementById("toogle");
+    
+    function toggleBtn(){
+        btn.classList.toggle("active")
+        toogle.classList.toggle("on")
+    }
+</script>
+</body>
+</html>
